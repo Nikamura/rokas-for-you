@@ -1,0 +1,25 @@
+{
+  "name": "Rokas for You",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Makes everything better with Rokas ❤️",
+  "browser_action": {
+    "default_title": "Rokas Face"
+  },
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["background.js"]
+    }
+  ],
+  "icons": {
+    "16": "rokas-16.png",
+    "128": "rokas-128.png"
+  }
+}
+
